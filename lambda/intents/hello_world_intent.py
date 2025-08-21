@@ -1,7 +1,7 @@
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
 import ask_sdk_core.utils as ask_utils
 from ask_sdk_core.handler_input import HandlerInput
-from requests import Response
+from ask_sdk_model import Response
 
 
 class HelloWorldIntentHandler(AbstractRequestHandler):
