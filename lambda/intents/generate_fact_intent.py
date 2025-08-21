@@ -3,8 +3,9 @@ import ask_sdk_core.utils as ask_utils
 from ask_sdk_core.handler_input import HandlerInput
 from ask_sdk_model import Response
 import random
+import importlib
 
-from unfun_facts.unfun_facts import unfun_facts
+unfun_facts = importlib.import_module('lambda.unfun_facts').unfun_facts
 
 class GenerateFactIntentHandler(AbstractRequestHandler):
     """Handler for Generate Fact Intent."""
