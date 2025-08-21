@@ -28,6 +28,18 @@
           ]
         },
         {
+          "name": "GenerateFactIntent",
+          "slots": [],
+          "samples": [
+            "tell me an unfun fact",
+            "give me an unfun fact",
+            "say an unfun fact",
+            "unfun fact",
+            "give me a fact",
+            "tell me a fact"
+          ]
+        },
+        {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
         },
