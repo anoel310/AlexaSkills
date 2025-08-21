@@ -78,8 +78,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
     stating the request handler chain is not found, you have not implemented a handler for
     the intent being invoked or included it in the skill builder below.
     """
-    def can_handle(self, handler_input, exception):
-        # type: (HandlerInput, Exception) -> bool
+    def can_handle(self, handler_input: HandlerInput, exception: Exception):
         return True
 
     def handle(self, handler_input: HandlerInput, exception: Exception) -> Response:
