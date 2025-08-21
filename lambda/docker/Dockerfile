@@ -10,5 +10,4 @@ RUN pip install --upgrade pip && \
 # Copy function code
 COPY . ${LAMBDA_TASK_ROOT}
 
-# Set the CMD to your handler (update 'app.handler' as needed)
-CMD ["lambda_function.lambda_handler"]
+ENTRYPOINT ["/usr/local/bin/aws-lambda-rie", "python3", "-m", "awslambdaric", "lambda_function.lambda_handler"]
