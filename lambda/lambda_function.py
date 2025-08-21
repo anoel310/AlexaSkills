@@ -31,7 +31,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
         return ask_utils.is_request_type("LaunchRequest")(handler_input)
 
     def handle(self, handler_input: HandlerInput) -> Response:
-        speak_output = "Welcome, you can say tell me an unfun fact and I will give you a fun fact."
+        speak_output = "Welcome, you can say tell me an unfun fact and I will give you an unfun fact."
 
         return (
             handler_input.response_builder
