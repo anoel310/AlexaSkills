@@ -18,7 +18,7 @@ from intents.fallback_intent import FallbackIntentHandler
 from intents.cancel_intent import CancelOrStopIntentHandler
 from intents.help_intent import HelpIntentHandler
 from intents.generate_fact_intent import GenerateFactIntentHandler
-
+from unfun_facts.unfun_facts import unfun_facts
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -108,7 +108,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 
 sb = SkillBuilder()
 
-sb.add_request_handler(GenerateFactIntentHandler)
+sb.add_request_handler(GenerateFactIntentHandler(unfun_facts=unfun_facts))
 sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(HelloWorldIntentHandler())
 sb.add_request_handler(HelpIntentHandler())

@@ -1,5 +1,4 @@
 from venv import logger
-
 import ask_sdk_core.utils as ask_utils
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
 from ask_sdk_core.handler_input import HandlerInput

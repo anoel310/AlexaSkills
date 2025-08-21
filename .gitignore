@@ -4,3 +4,4 @@ ask-resources.json
 lambda/node_modules
 .idea
 .venv
+__pycache__/
