@@ -10,4 +10,4 @@ RUN pip install --upgrade pip && \
 # Copy function code
 COPY . ${LAMBDA_TASK_ROOT}
 
-ENTRYPOINT ["/usr/local/bin/aws-lambda-rie", "python3", "-m", "awslambdaric", "lambda_function.lambda_handler"]
+CMD ["lambda_function.lambda_handler"]

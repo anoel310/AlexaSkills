@@ -23,8 +23,8 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
         with:
-          registry-type: public
-          region: us-east-1
+          registry-type: private
+          region: us-east-2
 
       - name: Build Docker image
         run: |
